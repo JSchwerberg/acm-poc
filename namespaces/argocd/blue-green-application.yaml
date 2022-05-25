@@ -5,9 +5,11 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/argoproj/rollouts-demo.git
+    repoURL: https://github.com/jschwerberg/rollouts-demo.git
     targetRevision: HEAD
     path: examples/blue-green
   destination:
     server: https://kubernetes.default.svc
     namespace: blue-green
+  syncPolicy:
+    automated: {}
