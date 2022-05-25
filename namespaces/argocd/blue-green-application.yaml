@@ -5,9 +5,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/argoproj/argocd-example-apps.git
+    repoURL: https://github.com/argoproj/rollouts-demo.git
     targetRevision: HEAD
-    path: blue-green
+    path: examples/blue-green
   destination:
     server: https://kubernetes.default.svc
     namespace: blue-green
