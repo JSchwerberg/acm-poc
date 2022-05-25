@@ -14,8 +14,7 @@ spec:
     helm:
       valueFiles: ["values-production.yaml"]
       values:
-        image:
-          pullPolicy: Always
+        image.pullPolicy: Always
   destination:
     server: "https://kubernetes.default.svc"
     namespace: guestbook
