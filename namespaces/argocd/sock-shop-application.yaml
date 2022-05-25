@@ -2,8 +2,6 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: sock-shop
-  annotations:
-    configmanagement.gke.io/cluster-selector: selector-env-prod
 spec:
   project: default
   source:
