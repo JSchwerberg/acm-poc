@@ -8,7 +8,7 @@ metadata:
 spec:
   project: default
   source:
-    chart: helm-guestbook
+    path: helm-guestbook
     repoURL: https://github.com/argoproj/argocd-example-apps
     targetRevision: HEAD
     helm:
