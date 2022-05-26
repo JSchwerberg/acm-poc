@@ -11,7 +11,7 @@ spec:
   project: default
   source:
     path: examples/istio
-    repoURL: https://github.com/argoproj/rollouts-demo
+    repoURL: https://github.com/jschwerberg/rollouts-demo
     targetRevision: HEAD
   syncPolicy:
     syncOptions:
