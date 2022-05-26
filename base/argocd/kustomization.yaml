@@ -1,6 +1,6 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-- https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/core-install.yaml
+- github.com/argoproj/argo-cd/manifests/core-install?ref=stable
 - https://raw.githubusercontent.com/argoproj/argo-cd/stable/notifications_catalog/install.yaml
 namespace: argocd
