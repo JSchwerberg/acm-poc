@@ -17,7 +17,7 @@ spec:
           apiKeyExistingSecret: datadog-api-key
           appKeyExistingSecret: datadog-api-key
           logs:
-            enabled: true
+            enabled: false
             containerCollectAll: true
           processAgent:
             enabled: true
