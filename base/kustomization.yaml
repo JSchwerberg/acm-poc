@@ -1,29 +1,10 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 bases:
-- argocd/
-- argo-rollouts/
 - monitoring/
 resources:
-- clusterrole_argocd-application-controller.yaml
-- clusterrole_argocd-server.yaml
-- clusterrole_argo-rollouts-aggregate-to-admin.yaml
-- clusterrole_argo-rollouts-aggregate-to-edit.yaml
-- clusterrole_argo-rollouts-aggregate-to-view.yaml
-- clusterrole_argo-rollouts.yaml
-- clusterrolebinding_argocd-application-controller.yaml
-- clusterrolebinding_argocd-server.yaml
-- clusterrolebinding_argo-rollouts.yaml
-- customresourcedefinition_analysisruns.argoproj.io.yaml
-- customresourcedefinition_analysistemplates.argoproj.io.yaml
-- customresourcedefinition_applications.argoproj.io.yaml
-- customresourcedefinition_applicationsets.argoproj.io.yaml
-- customresourcedefinition_appprojects.argoproj.io.yaml
-- customresourcedefinition_clusteranalysistemplates.argoproj.io.yaml
-- customresourcedefinition_experiments.argoproj.io.yaml
-- customresourcedefinition_rollouts.argoproj.io.yaml
-- namespace_argocd.yaml
-- namespace_argo-rollouts.yaml
+- argocd.yaml
+- argo-rollouts.yaml
 - namespace_guestbook.yaml
 - namespace_monitoring.yaml
 - namespace_sealed-secrets.yaml
