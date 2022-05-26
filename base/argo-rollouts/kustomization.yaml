@@ -3,4 +3,6 @@ kind: Kustomization
 resources:
 - https://github.com/argoproj/argo-rollouts/releases/latest/download/install.yaml
 - https://github.com/argoproj/argo-rollouts/releases/latest/download/notifications-install.yaml
+patchesStrategicMerge:
+- notifications-add-slack-token.yaml
 namespace: argo-rollouts

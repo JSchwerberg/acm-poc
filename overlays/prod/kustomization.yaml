@@ -5,3 +5,5 @@ bases:
 patchesStrategicMerge:
 - application_guestbook.yaml
 - sealedsecret_datadog-api-key.yaml
+resources:
+- sealedsecret_argo-rollouts-notification-secret.yaml
