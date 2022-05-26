@@ -6,7 +6,3 @@ resources:
 - application_sealed-secrets.yaml
 - application_sock-shop.yaml
 - application_external-secrets.yaml
-- namespace_guestbook.yaml
-- namespace_monitoring.yaml
-- namespace_sealed-secrets.yaml
-- namespace_sock-shop.yaml

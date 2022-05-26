@@ -31,4 +31,6 @@ spec:
     repoURL: https://helm.datadoghq.com
     targetRevision: 2.33.7
   syncPolicy:
+    syncOptions:
+      - CreateNamespace=true
     automated: {}
